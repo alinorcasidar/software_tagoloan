@@ -1,0 +1,463 @@
+:root {
+    --bg-color: #EEECE1;
+    --color: #A7957D;
+}
+
+* {
+    /* font-family: sans-serif !important; */
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.__primary-color {
+    background-color: var(--bg-color) !important;
+}
+
+.__primary-text-color {
+    color: var(--color) !important;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 0 20px;
+}
+
+.navbar .title-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar .title-header h2 {
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.navbar .title-header h2 span {
+    font-size: 15px;
+}
+
+.navbar .title-header img {
+    height: 60px;
+}
+
+.navbar .links li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.navbar .links li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--color);
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+    border-radius: 99999px;
+    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045) .3s all;
+    vertical-align: middle;
+}
+
+.navbar .links li a:hover,
+.navbar .links li a.active {
+    
+    background-color: var(--color);
+    color: white;
+}
+
+.show-on-mobile {
+    display: none !important;
+}
+
+.hero-page {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* outline: 1px solid red; */
+    position: relative;
+    bottom: 30px;
+}
+
+.hero-page .context h3 {
+    font-size:  28px;
+    font-family: 'Open Sans'!important;
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(115, 115, 115);
+    position: relative;
+    top: 40px;
+}
+.hero-page .context{
+    position: relative;
+    right: 80px;
+}
+
+.hero-page .context h1 {
+    font-size: 100px;
+    font-family: 'Old Standard TT', serif;
+    color: var(--color);    
+    font-weight: lighter !important;
+    position: relative;
+    bottom: 40px;
+
+}
+
+.hero-page .context p {
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    position: relative;
+    bottom: 40px;
+}
+
+.hero-page .context .button {
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 9999px;
+    color: white;
+    background-color: var(--color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;;
+    margin-top: 40px;;
+    text-align: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s all;
+    position: relative;
+    bottom: 50px;
+    font-family: 'Open Sans';
+}
+
+
+
+.hero-page .context .button:hover {
+    opacity: 0.7;
+}
+
+.hero-page .context .button:active {
+    transform: scale(0.9);
+}
+
+.hero-page .context .button span {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.hero-page .cards {
+    text-align: center;
+}
+
+.hero-page .cards .card {
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.134);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+.hero-page .cards .card input {
+    display: block;
+    padding: 13px 24px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.073);
+    color: var(--color);
+    border: 0;
+    font-size: 16px;
+    margin: 20px 0;
+    width: 100%;   
+    border: 2px solid transparent; 
+    outline: 0;
+}
+
+.hero-page .cards .card select {
+    display: block;
+    padding: 13px 24px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.073);
+    color: var(--color);
+    border: 0;
+    font-size: 16px;
+    margin: 20px 0;
+    width: 100%;   
+    border: 2px solid transparent; 
+    outline: 0;
+}
+
+.hero-page .cards .card textarea {
+    display: block;
+    padding: 13px 24px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.073);
+    color: var(--color);
+    border: 0;
+    font-size: 16px;
+    margin: 20px 0;
+    width: 100%;   
+    border: 2px solid transparent; 
+    outline: 0;
+}
+
+
+.hero-page .cards .card input:focus {
+    border-color: var(--color);
+}
+
+.hero-page .cards .card .button {
+    display: block;
+    padding: 13px 24px;
+    border-radius: 8px;
+    background-color: var(--color);
+    border: 0;
+    font-size: 16px;
+    margin: 20px 0;
+    width: 100%;   
+    color: white;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s all;
+}
+
+.hero-page .cards .card .button:hover {
+    opacity: 0.8;
+}
+
+.hero-page .cards .card .button:active {
+    transform: scale(0.9);
+}
+
+.two-col {
+    width: 50%;
+    padding: 15px;
+}
+
+.two-col.w-100 {
+    width: 100%;
+}
+
+.hero-page img {
+    width: 100% !important; 
+}
+
+
+
+.imgs{
+    position: relative;
+    left: 50px;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.notice h2 {
+    background-color: var(--color);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.notice p {
+    line-height: 200%;
+}
+
+.projects h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.projects img {
+    width: 100%;
+}
+
+.projects .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.projects .grid-container {
+    width: 25%;
+    padding: 10px;
+
+}
+
+.projects .grid-container .greyed {
+    background-color: var(--color);
+    padding: 10px;
+    color: white;
+}
+
+.projects .grid-container .greyed.plus {
+    border: 2px solid var(--color);
+    background-color: transparent;
+    color: var(--color);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s all;
+}
+
+.projects .grid-container .greyed.plus:hover {
+    background-color: var(--color);
+    color: white;
+
+}
+
+.project-solo-container {
+    max-width: 700px;;
+    margin: auto;   
+    text-align: justify;
+}
+
+.project-solo-container img {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.project-solo-container p {
+    line-height: 200%;
+}
+
+.projects table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.projects table th,
+.projects table td {
+    padding: 15px 7px;
+}
+
+.projects table th {
+    background-color: var(--color);
+    color: white;
+}
+
+.projects table tr:hover {
+    background-color: rgba(0, 0, 0, 0.145);
+}
+
+.contact .button {
+    margin: 10px !important;
+}
+
+.rem-cont {
+    max-width: 420px;
+    margin: auto;;
+}
+
+.reminder-container {
+    width: 100%;
+    padding-bottom: 100%;
+    background: url(../img/reminder-bg.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.reminder-lists {
+    position: absolute;
+    outline: 2px solid red;
+    top: 30%;
+    left: 10%;
+    height: 65%;
+    width: 80%;
+    overflow-y: scroll;
+}
+
+.reminder-lists ul li {
+    list-style-type: '🔔 ';
+    font-size: 18px;
+    padding: 25px 0;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s all;
+}
+
+.reminder-lists ul li:hover {
+    background-color: rgba(0, 0, 0, 0.074);
+}
+
+.error {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(212, 33, 33);
+    color: white;
+}
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color);
+    color: white;
+    z-index: 99999;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s all;
+    transform: translateX(300px);
+}
+
+.sidenav.active {
+    transform: translateX(0);
+}
+
+.sidenav .links {
+    padding-left: 0;
+}
+
+.sidenav ul li {
+    list-style-type: none;
+    display: block;
+    
+}
+
+.sidenav ul li a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.sidenav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.197);
+}
+
+
+
+@media only screen and (max-width: 1134px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .show-on-mobile {
+        display: inline-block !important;
+    }
+
+    .hero-page .two-col {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 913px) {
+    .projects .grid-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .projects .grid-container {
+        width: 100%;
+    }
+}
